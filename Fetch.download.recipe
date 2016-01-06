@@ -36,7 +36,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_path</key>
-                <string>%pathname%/Fetch.app</string>
+                <string>%pathname%/*.app</string>
                 <key>requirement</key>
                 <string>identifier "com.getFetch.Fetch"</string>
             </dict>
