@@ -3,28 +3,18 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Evernote and creates a package.</string>
+    <string>Downloads the latest Fetch and creates a package.</string>
     <key>Identifier</key>
-	<string>com.github.sthang50.download.Fetch</string>
-	<key>Input</key>
+    <string>com.github.sthang50.pkg.Fetch</string>
+    <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Evernote</string>
+        <string>Dropbox</string>
     </dict>
-    <key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>filename</key>
-				<string>Fetch.dmg</string>
-				<key>url</key>
-				<string>http://fetchsoftworks.com/fetch/download/Fetch_5.7.5.dmg?direct=1</string>
-			</dict>
-			<key>Processor</key>
-			<string>URLDownloader</string>
-		</dict>
-	</array>
+    <key>MinimumVersion</key>
+    <string>0.2.5</string>
+    <key>ParentRecipe</key>
+    <string>com.github.sthang50.download.Fetch</string>
     <key>Process</key>
     <array>
         <dict>
@@ -68,7 +58,7 @@
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>scripts</key>
-                    <string>Dropbox_Scripts</string>
+                    <string>Fetch_Scripts</string>
                     <key>chown</key>
                     <array>
                         <dict>
